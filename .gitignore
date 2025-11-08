@@ -1,0 +1,38 @@
+# --- Build outputs ---
+build/
+bin/
+obj/
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.a
+*.lib
+
+# --- CMake cache files ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# --- External dependencies ---
+SDL/
+SDL2/
+SDL2-*/
+
+# --- Editor and IDE configs ---
+.vscode/
+.idea/
+.clangd
+*.code-workspace
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs and temporary files ---
+*.log
+*.tmp
+*.bak
