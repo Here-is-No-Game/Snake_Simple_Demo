@@ -8,6 +8,7 @@
 
 snake::snake(int lenth, Map *m) {
   M = m;
+  direction = {1, 0};
   for (int x = 1; x <= lenth; x++) {
     Vec2 NewBody(x, 1);
     Body.push(NewBody);
@@ -61,6 +62,12 @@ void snake::move(SDL_Event input) {
     return;
   }
   // TODO BAN Backward
+  if (InputTrans(input) + direction == (Vec2){0, 0}) {
+    return;
+  }
+
+  direction = InputTrans(input);
+
   if (M->Check(NextPos) == 1) {
     gm.GameMap.CreateBody(Body.back().x, Body.back().y);
     if (gm.Papy.Body.front() == NextPos) {

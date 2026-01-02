@@ -9,9 +9,10 @@ class snake {
 private:
   std::queue<Vec2> Body;
   Map *M;
+  Vec2 direction;
 
 public:
-  snake(int lenth, Map *m) ;
+  snake(int lenth, Map *m);
   ~snake();
 
   static Vec2 InputTrans(const SDL_Event &input);
