@@ -27,6 +27,7 @@ SDL2-*/
 .idea/
 .clangd
 *.code-workspace
+.cach/
 
 # --- System files ---
 .DS_Store

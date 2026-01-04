@@ -12,8 +12,14 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 file(GLOB SRC_FILES ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
 # 生成可执行文件
-add_executable(${PROJECT_NAME} ${SRC_FILES})
+add_executable(Test_Demo
+    ${SRC_FILES}
+)
+
+target_link_libraries(Test_Demo
+    PRIVATE SDL3::SDL3
+)
 
 # 链接 SDL3
 
-target_link_libraries(Test_Demo PRIVATE SDL3::SDL3)
+target_link_libraries(Test_Demo PRIVATE SDL3::SDL3) 
