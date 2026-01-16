@@ -11,6 +11,6 @@ const std::unordered_map<int, SDL_Color> COLOR_MAP = {
     {1, SDL_Color{255, 0, 222, 255}}, // Body
     {2, SDL_Color{255,190, 0, 255}},   // Fruit
     {3, SDL_Color{240, 240, 240, 255}}, // line
-    {4, SDL_Color{0,245, 255, 255}}  // Head
+    {4, SDL_Color{0,240, 255, 255}}  // Head
 };
 } // namespace Config
